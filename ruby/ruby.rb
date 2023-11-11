@@ -1,6 +1,5 @@
 #USER INPUT
 #___________________________________________________________________________
-
 # puts "Enter your name: "
 # name = gets.chomp()
 
@@ -19,7 +18,6 @@
 
 #MADLIBS
 #___________________________________________________________________________
-
 # puts "Give a color: "
 # color = gets.chomp()
 # puts "Give a plural noun: "
@@ -33,9 +31,8 @@
 
 #ARRAYS
 #___________________________________________________________________________
-
 # my_array = Array["Alex", "Jacobe", "Derek", "Tyler"]
-# puts my_array[0,2]
+# puts my_array[0, 2]
 # puts my_array[1]
 
 # my_array = Array.new
@@ -50,12 +47,20 @@
 
 #HASHES
 #___________________________________________________________________________
-states = {
-  :Connecticut => "CT",
-  :Massachussets => "MA",
-  :New_York => "NY",
-  :Oregon => "OR",
-}
+# states = {
+#   :Connecticut => "CT",
+#   :Massachussets => "MA",
+#   :New_York => "NY",
+#   :Oregon => "OR",
+# }
 
-puts states
-puts states[:Oregon]
+# puts states
+# puts states[:Oregon]
+
+#METHODS
+#___________________________________________________________________________
+# def say_hi(name = "No Name", age = -1)
+#   puts "Hello #{name} you are #{age.to_s}"
+# end
+
+# say_hi
