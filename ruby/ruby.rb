@@ -1,3 +1,6 @@
+#USER INPUT
+#___________________________________________________________________________
+
 # puts "Enter your name: "
 # name = gets.chomp()
 
@@ -14,6 +17,9 @@
 
 # puts "#{num1} plus #{num2} eqauls #{num1 + num2}"
 
+#MADLIBS
+#___________________________________________________________________________
+
 # puts "Give a color: "
 # color = gets.chomp()
 # puts "Give a plural noun: "
@@ -24,3 +30,6 @@
 # puts "Roses are #{color.downcase}"
 # puts "#{plural_noun.capitalize} are blue"
 # puts "I love #{celebrity.capitalize}"
+
+#ARRAYS
+#___________________________________________________________________________
