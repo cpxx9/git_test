@@ -42,8 +42,20 @@
 # my_array[0] = "Zolson"
 # puts my_array
 
-my_array = Array["Tyler", "Derek", "Jacobe", "Alex"]
-puts "Original Array: #{my_array}"
-puts "Length of array: #{my_array.length}"
-puts "Includes Zolson?: #{my_array.include? "Zolson"}"
-puts "Sorted: #{my_array.sort()}"
+# my_array = Array["Tyler", "Derek", "Jacobe", "Alex"]
+# puts "Original Array: #{my_array}"
+# puts "Length of array: #{my_array.length}"
+# puts "Includes Zolson?: #{my_array.include? "Zolson"}"
+# puts "Sorted: #{my_array.sort()}"
+
+#HASHES
+#___________________________________________________________________________
+states = {
+  :Connecticut => "CT",
+  :Massachussets => "MA",
+  :New_York => "NY",
+  :Oregon => "OR",
+}
+
+puts states
+puts states[:Oregon]
