@@ -33,3 +33,17 @@
 
 #ARRAYS
 #___________________________________________________________________________
+
+# my_array = Array["Alex", "Jacobe", "Derek", "Tyler"]
+# puts my_array[0,2]
+# puts my_array[1]
+
+# my_array = Array.new
+# my_array[0] = "Zolson"
+# puts my_array
+
+my_array = Array["Tyler", "Derek", "Jacobe", "Alex"]
+puts "Original Array: #{my_array}"
+puts "Length of array: #{my_array.length}"
+puts "Includes Zolson?: #{my_array.include? "Zolson"}"
+puts "Sorted: #{my_array.sort()}"
