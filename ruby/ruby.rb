@@ -67,8 +67,33 @@
 
 #Return Statements
 #___________________________________________________________________________
-def cube_number(num)
-   return num * num * num, "hello"
-end
+# def cube_number(num)
+#    return num * num * num, "hello"
+# end
 
-puts cube_number(2)
+# puts cube_number(2)
+
+#If Statements
+#___________________________________________________________________________
+# is_male = true
+# is_tall = false
+
+# if is_male and is_tall
+#   puts "you are a stud"
+# else
+#   puts "you are weak"
+# end
+
+# if is_male or is_tall
+#   puts "i greg"
+# else
+#   puts "nah man"
+# end
+
+# if is_male and is_tall
+#   puts "Weather"
+# elsif is_male and !is_tall
+#   puts "FUCK YOU"
+# else
+#   puts "geez"
+# end
