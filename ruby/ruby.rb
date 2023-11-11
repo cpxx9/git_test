@@ -64,3 +64,11 @@
 # end
 
 # say_hi
+
+#Return Statements
+#___________________________________________________________________________
+def cube_number(num)
+   return num * num * num, "hello"
+end
+
+puts cube_number(2)
