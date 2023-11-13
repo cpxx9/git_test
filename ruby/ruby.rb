@@ -269,5 +269,5 @@ comments
 #CLASSES AND OBJECTS
 #___________________________________________________________________________
 class Book
-
+   attr_accessor :title, :author, :year
 end
