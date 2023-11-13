@@ -148,7 +148,7 @@
 
 #GUESSING GAME
 #___________________________________________________________________________
-word_list = ["Cheesecake", "Monster", "Retard", "Terrible"]
+word_list = ["Cheesecake", "Lasagna", "Stromboli", "Brownie"]
 secret_word = word_list.sample.to_s.chomp().downcase
 puts secret_word
 guess = ""
@@ -156,6 +156,7 @@ guess_count = 0
 guess_limit = secret_word.length - 1
 out_of_guesses = false
 
+puts "The category is food"
 puts "The number of letters in my word: #{secret_word.length}"
 
 while guess != secret_word and !out_of_guesses
