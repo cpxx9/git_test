@@ -185,6 +185,10 @@ friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
 #   puts element
 # end
 
-friends.each do |element|
-  puts element
+# friends.each do |element|
+#   puts element
+# end
+
+for index in 0..5
+  puts index
 end
