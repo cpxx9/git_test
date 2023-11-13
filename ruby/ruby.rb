@@ -181,22 +181,21 @@
 #___________________________________________________________________________
 # friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
 
-# # for element in friends
-# #   puts element
-# # end
+# for element in friends
+#   puts element
+# end
+# friends.each do |element|
+#   puts element
+# end
 
-# # friends.each do |element|
-# #   puts element
-# # end
+#go through a specific number of times
+# for index in 0..5
+#   puts index
+# end
 
-# #go through a specific number of times
-# # for index in 0..5
-# #   puts index
-# # end
-
-# # 6.times do |index|
-# #   puts index
-# # end
+# 6.times do |index|
+#   puts index
+# end
 
 #EXPONENT METHOD
 #___________________________________________________________________________
@@ -252,4 +251,17 @@ comments
 # File.open("employees.txt", "r+") do |file|
 #   file.readline()
 #   file.write("Hi")
+# end
+
+#HANDLING ERRORS
+#___________________________________________________________________________
+# lucky_nums = [4, 8, 15 ,16, 23, 42]
+
+# begin
+#   # num = 10 / 0
+#   lucky_nums["dog"]
+# rescue ZeroDivisionError => error_value
+#   puts error_value
+# rescue TypeError => error_value
+#   puts error_value
 # end
