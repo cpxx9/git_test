@@ -79,9 +79,9 @@
 # is_tall = false
 
 # if is_male and is_tall
-#   puts "you are a stud"
+#   puts "you are tall"
 # else
-#   puts "you are weak"
+#   puts "you are not tall"
 # end
 
 # if is_male or is_tall
@@ -93,7 +93,7 @@
 # if is_male and is_tall
 #   puts "Weather"
 # elsif is_male and !is_tall
-#   puts "FUCK YOU"
+#   puts "wow"
 # else
 #   puts "geez"
 # end
@@ -109,3 +109,31 @@
 # end
 
 # puts find_max(1, 29, 3)
+
+#CASE EXPRESSION
+#___________________________________________________________________________
+def get_day_name(day)
+  day_name = ""
+  case day
+    when "mon"
+      day_name = "Monday"
+    when "tue"
+      day_name = "Tuesday"
+    when "wed"
+      day_name = "Wednesday"
+    when "thu"
+      day_name = "Thursday"
+    when "fri"
+      day_name = "Friday"
+    when "sat"
+      day_name = "Satuday"
+    when "sun"
+      day_name = "Sunday"
+    else
+      day_name = "Invalid Abbrevation"
+  end
+
+  return day_name
+end
+
+puts get_day_name("sat")
