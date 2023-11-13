@@ -243,12 +243,13 @@ comments
 #   file.write("\nOscar, Accounting")
 # end
 
-#writing
+#writing -- creates a file
 # File.open("ruby.html", "w") do |file|
 #     file.write("<h1>Hello</h1>")
 #   end
 
 #read and write
-File.open("ruby.html", "w") do |file|
-  file.write("<h1>Hello</h1>")
-end
+# File.open("employees.txt", "r+") do |file|
+#   file.readline()
+#   file.write("Hi")
+# end
