@@ -210,3 +210,11 @@
 # end
 
 # puts pow(-5, 4)
+
+#COMMENTS
+#___________________________________________________________________________
+=begin
+this also works for
+multiline
+comments
+=end
