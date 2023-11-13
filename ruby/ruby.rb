@@ -148,18 +148,20 @@
 
 #GUESSING GAME
 #___________________________________________________________________________
-secret_word = "Cheesecake".downcase
+word_list = ["Cheesecake", "Monster", "Retard", "Terrible"]
+secret_word = word_list.sample.to_s.chomp().downcase
+puts secret_word
 guess = ""
 guess_count = 0
-guess_limit = secret_word.length - 2
+guess_limit = secret_word.length - 1
 out_of_guesses = false
 
 puts "The number of letters in my word: #{secret_word.length}"
 
 while guess != secret_word and !out_of_guesses
   if guess_count < guess_limit
-    if guess_count > 1
-      puts "Hint: #{secret_word[0, guess_count - 1]}"
+    if guess_count > 0
+      puts "Hint: #{secret_word[0, guess_count]}"
     end
     puts "Enter your guess: "
     guess = gets.chomp().downcase
