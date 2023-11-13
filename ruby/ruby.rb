@@ -235,3 +235,20 @@ comments
 # puts file.read
 
 # file.close()
+
+#WRITING FILES
+#___________________________________________________________________________
+#append
+# File.open("employees.txt", "a") do |file|
+#   file.write("\nOscar, Accounting")
+# end
+
+#writing
+# File.open("ruby.html", "w") do |file|
+#     file.write("<h1>Hello</h1>")
+#   end
+
+#read and write
+File.open("ruby.html", "w") do |file|
+  file.write("<h1>Hello</h1>")
+end
