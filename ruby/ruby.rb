@@ -148,4 +148,20 @@
 
 #GUESSING GAME
 #___________________________________________________________________________
-secret_word = "poolio"
+secret_word = "Cheesecake".downcase
+guess = ""
+index = 0
+while guess != secret_word
+  if index > 1
+    puts "Hint: #{secret_word[0, index - 1]}"
+  end
+  puts "Enter your guess: "
+  guess = gets.chomp().downcase
+  index += 1
+end
+
+if index > secret_word.length + 1
+  puts "You Lost!"
+else
+  puts "You Won!"
+end
