@@ -148,31 +148,31 @@
 
 #GUESSING GAME
 #___________________________________________________________________________
-word_list = ["Cheesecake", "Lasagna", "Stromboli", "Brownie"]
-secret_word = word_list.sample.to_s.chomp().downcase
-guess = ""
-guess_count = 0
-guess_limit = secret_word.length - 1
-out_of_guesses = false
+# word_list = ["Cheesecake", "Lasagna", "Stromboli", "Brownie"]
+# secret_word = word_list.sample.to_s.chomp().downcase
+# guess = ""
+# guess_count = 0
+# guess_limit = secret_word.length - 1
+# out_of_guesses = false
 
-puts "The category is food"
-puts "The number of letters in my word: #{secret_word.length}"
+# puts "The category is food"
+# puts "The number of letters in my word: #{secret_word.length}"
 
-while guess != secret_word and !out_of_guesses
-  if guess_count < guess_limit
-    if guess_count > 0
-      puts "Hint: #{secret_word[0, guess_count]}"
-    end
-    puts "Enter your guess: "
-    guess = gets.chomp().downcase
-    guess_count += 1
-  else
-    out_of_guesses = true
-  end
-end
+# while guess != secret_word and !out_of_guesses
+#   if guess_count < guess_limit
+#     if guess_count > 0
+#       puts "Hint: #{secret_word[0, guess_count]}"
+#     end
+#     puts "Enter your guess: "
+#     guess = gets.chomp().downcase
+#     guess_count += 1
+#   else
+#     out_of_guesses = true
+#   end
+# end
 
-if out_of_guesses
-  puts "You Lose nerd"
-else
-  puts "You Win!"
-end
+# if out_of_guesses
+#   puts "You Lose nerd"
+# else
+#   puts "You Win!"
+# end
