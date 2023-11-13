@@ -150,17 +150,27 @@
 #___________________________________________________________________________
 secret_word = "Cheesecake".downcase
 guess = ""
-index = 0
-while guess != secret_word
-  if index > 1
-    puts "Hint: #{secret_word[0, index - 1]}"
+guess_count = 0
+guess_limit = secret_word.length - 2
+out_of_guesses = false
+
+puts "The number of letters in my word: #{secret_word.length}"
+
+while guess != secret_word and !out_of_guesses
+  if guess_count < guess_limit
+    if guess_count > 1
+      puts "Hint: #{secret_word[0, guess_count - 1]}"
+    end
+    puts "Enter your guess: "
+    guess = gets.chomp().downcase
+    guess_count += 1
+  else
+    out_of_guesses = true
   end
-  puts "Enter your guess: "
-  guess = gets.chomp().downcase
-  index += 1
 end
-if index > secret_word.length + 1
-  puts "You Lost!"
+
+if out_of_guesses
+  puts "You Lose nerd"
 else
-  puts "You Won!"
+  puts "You Win!"
 end
