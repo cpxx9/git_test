@@ -159,7 +159,6 @@ while guess != secret_word
   guess = gets.chomp().downcase
   index += 1
 end
-
 if index > secret_word.length + 1
   puts "You Lost!"
 else
