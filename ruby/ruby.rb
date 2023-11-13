@@ -179,16 +179,21 @@
 
 #FOR LOOPS
 #___________________________________________________________________________
-friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
+# friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
 
-# for element in friends
-#   puts element
-# end
+# # for element in friends
+# #   puts element
+# # end
 
-# friends.each do |element|
-#   puts element
-# end
+# # friends.each do |element|
+# #   puts element
+# # end
 
-for index in 0..5
-  puts index
-end
+# #go through a specific number of times
+# # for index in 0..5
+# #   puts index
+# # end
+
+# # 6.times do |index|
+# #   puts index
+# # end
