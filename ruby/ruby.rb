@@ -65,7 +65,7 @@
 
 # say_hi
 
-#Return Statements
+#RETURN STATEMENTS
 #___________________________________________________________________________
 # def cube_number(num)
 #    return num * num * num, "hello"
@@ -73,7 +73,7 @@
 
 # puts cube_number(2)
 
-#If Statements
+#IF STATEMENTS
 #___________________________________________________________________________
 # is_male = true
 # is_tall = false
@@ -145,3 +145,6 @@
 #   puts index
 #   index += 1
 # end
+
+#GUESSING GAME
+#___________________________________________________________________________
