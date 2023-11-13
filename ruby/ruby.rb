@@ -268,21 +268,28 @@ comments
 
 #CLASSES AND OBJECTS
 #___________________________________________________________________________
-#create our own class
-  class Book
+# #create our own class
+# class Book
+#   attr_accessor :title, :author, :year
+# end
+
+# #create an object of that data type
+# book1 = Book.new()
+# book1.title = "Harry Potter"
+# book1.author = "JK Rowling"
+# book1.year = 1999
+
+# puts book1.year
+
+# book2 = Book.new()
+# book2.title = "Lord of the Rings"
+# book2.author = "Tolkein"
+# book2.year = 1937
+
+# puts book2.author
+
+#INITIALIZE METHOD
+#___________________________________________________________________________
+class Book
     attr_accessor :title, :author, :year
-  end
-#create an object of that data type
-  book1 = Book.new()
-  book1.title = "Harry Potter"
-  book1.author = "JK Rowling"
-  book1.year = 1999
-
-  puts book1.year
-
-  book2 = Book.new()
-  book2.title = "Lord of the Rings"
-  book2.author = "Tolkein"
-  book2.year = 1937
-
-  puts book2.author
+end
