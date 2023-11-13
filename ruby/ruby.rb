@@ -237,7 +237,7 @@ comments
 
 #WRITING FILES
 #___________________________________________________________________________
-#append
+# append
 # File.open("employees.txt", "a") do |file|
 #   file.write("\nOscar, Accounting")
 # end
@@ -268,3 +268,6 @@ comments
 
 #CLASSES AND OBJECTS
 #___________________________________________________________________________
+class Book
+
+end
