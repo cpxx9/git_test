@@ -150,7 +150,6 @@
 #___________________________________________________________________________
 word_list = ["Cheesecake", "Lasagna", "Stromboli", "Brownie"]
 secret_word = word_list.sample.to_s.chomp().downcase
-puts secret_word
 guess = ""
 guess_count = 0
 guess_limit = secret_word.length - 1
