@@ -230,8 +230,8 @@ comments
 #   end
 # end
 
-file = File.open("employees.txt", "r")
+# file = File.open("employees.txt", "r")
 
-puts file.read
+# puts file.read
 
-file.close()
+# file.close()
