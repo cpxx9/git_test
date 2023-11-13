@@ -265,3 +265,6 @@ comments
 # rescue TypeError => error_value
 #   puts error_value
 # end
+
+#CLASSES AND OBJECTS
+#___________________________________________________________________________
