@@ -137,3 +137,11 @@
 # end
 
 # puts get_day_name("sat")
+
+#WHILE LOOPS
+#___________________________________________________________________________
+index = 1
+while index <= 5
+  puts index
+  index++
+end
