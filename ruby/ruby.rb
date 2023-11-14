@@ -367,3 +367,31 @@ comments
 # end
 
 # run_test(questions)
+
+#INHERITENCE
+#___________________________________________________________________________
+# class Chef
+#   def make_chicken
+#     puts "The chef makes chicken"
+#   end
+#   def make_salad
+#     puts "The chef makes salad"
+#   end
+#   def make_special
+#     puts "The chef makes bbq ribs"
+#   end
+# end
+
+# class ItalianChef < Chef  #Inherits methods from "Chef" class
+#   def make_special
+#     puts "The chef makes Lasagna"
+#   end
+#   def make_pasta
+#     puts "The chef makes Pasta"
+#   end
+# end
+
+# chef1 = Chef.new()
+# chef = ItalianChef.new()
+# chef1.make_special
+# chef.make_pasta
