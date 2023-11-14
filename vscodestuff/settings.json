@@ -16,7 +16,7 @@
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.defaultFormatter": "GitHub.codespaces",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.tabSize": 2,
@@ -33,7 +33,7 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "entity.name.type.class.ruby,variable.other.readwrite.instance.ruby",
+        "scope": "entity.name.type.class.ruby,variable.other.readwrite.instance.ruby,support.class.ruby",
         "settings": {
           "foreground": "#EA6310",
         },
