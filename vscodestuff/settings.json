@@ -35,11 +35,16 @@
       {
         "scope": "entity.name.type.class.ruby,variable.other.readwrite.instance.ruby",
         "settings": {
-          "foreground": "#EA6310",
+          "foreground": "#EA6310"
+        }
+      },
+      {
+        "scope": "punctuation.section.function.ruby",
+        "settings": {
+          "foreground": "#EA6310"
         }
       }
     ]
   }
-  
 }
 
