@@ -292,7 +292,7 @@ comments
 #___________________________________________________________________________
 # class Book
 #     attr_accessor :title, :author, :year
-#     def initialize(tile, author, year)
+#     def initialize(title, author, year)
 #       @title = title
 #       @author = author
 #       @year = year
@@ -304,3 +304,31 @@ comments
 # book2 = Book.new("Lord of the Rings", "Tolkein", 1937)
 
 # puts book1.title
+
+#OBJECT METHOD
+#___________________________________________________________________________
+# class Student
+#   attr_accessor :name, :major, :gpa
+#   def initialize(name, major, gpa)
+#     @name = name
+#     @major = major
+#     @gpa = gpa
+#   end
+
+#   def has_honors
+#     if @gpa >= 3.5
+#       return true
+#     end
+#     return false
+#   end
+# end
+
+# student1 = Student.new("Cole", "CSE", 3.6)
+# student2 = Student.new("Alex", "Finance", 3.4)
+# student3 = Student.new("Jacob", "History", 3.8)
+# student4 = Student.new("Dave", "Arts", 2.1)
+
+# puts student1.has_honors
+# puts student2.has_honors
+# puts student3.has_honors
+# puts student4.has_honors
