@@ -33,7 +33,7 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "entity.name.type.class.ruby,variable.other.readwrite.instance.ruby,support.class.ruby",
+        "scope": "entity.name.type.class.ruby,variable.other.readwrite.instance.ruby,support.class.ruby,entity.other.attribute-name.html",
         "settings": {
           "foreground": "#EA6310",
         },
