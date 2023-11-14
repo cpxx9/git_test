@@ -292,4 +292,18 @@ comments
 #___________________________________________________________________________
 class Book
     attr_accessor :title, :author, :year
+    def initialize(name)
+      puts "Hello #{name}"
+    end
 end
+
+
+book1 = Book.new("Cole")
+book1.title = "Harry Potter"
+book1.author = "JK Rowling"
+book1.year = 1999
+
+book2 = Book.new("Kyle")
+book2.title = "Lord of the Rings"
+book2.author = "Tolkein"
+book2.year = 1937
