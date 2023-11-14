@@ -382,11 +382,11 @@ comments
 #   end
 # end
 
-# class ItalianChef < Chef  #Inherits methods from "Chef" class
-#   def make_special
+# class ItalianChef < Chef              #Inherits methods from "Chef" class
+#   def make_special                    #Changes method from the inherited one
 #     puts "The chef makes Lasagna"
 #   end
-#   def make_pasta
+#   def make_pasta                      #Creates its own method
 #     puts "The chef makes Pasta"
 #   end
 # end
@@ -395,3 +395,18 @@ comments
 # chef = ItalianChef.new()
 # chef1.make_special
 # chef.make_pasta
+
+#MODULES
+#___________________________________________________________________________
+# module Tools
+#   def sayhi(name)
+#     puts "Hello #{name}"
+#   end
+#   def saybi(name)
+#     puts "Bye #{name}"
+#   end
+# end
+
+# include Tools
+
+# Tools.sayhi("mike")
