@@ -398,15 +398,8 @@ comments
 
 #MODULES
 #___________________________________________________________________________
-# module Tools
-#   def sayhi(name)
-#     puts "Hello #{name}"
-#   end
-#   def saybi(name)
-#     puts "Bye #{name}"
-#   end
-# end
+#module is in the modules.rb file
+require_relative "modules.rb"      #recognizes the other file
+include Tools
 
-# include Tools
-
-# Tools.sayhi("mike")
+Tools.sayhi("Cole")
