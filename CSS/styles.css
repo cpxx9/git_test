@@ -1,0 +1,35 @@
+main div {
+  /* all child and grandchild <div>s of main */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+}
+
+main > div {
+  /* only direct children <div>s of main  */
+  background-color: aqua;
+}
+
+main > div > div {
+  /* only grand children <div>s of main */
+  background-color: aquamarine;
+  font-size: .8rem;
+}
+
+.group1 + div {
+  /* <div> adjacent to the <div> with class group1 (group2) */
+  border: 2px orange solid;
+}
+
+.group1 + div +div {
+  /* <div> 2 adjacents away from <div> with class group1 (group3) */
+  border: 2px solid blueviolet;
+}
+
+.group1 ~ div {
+  /* selects all adjacent <div>s to the .group1 <div> */
+  margin-top: 4px;
+}
+
+main div:first-child {
+  font-size: 32px;
+}
