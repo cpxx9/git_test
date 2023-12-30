@@ -15,11 +15,31 @@
   <main class="parent">
     <form action="" method="post">
       <fieldset>
+        <legend>Contact Info</legend>
         <label for="first_name">First Name</label>
         <input type="text" id="first_name" name="first_name">
       
         <label for="last_name">Last Name</label>
         <input type="text" id="last_name" name="last_name">
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like to drink</legend>
+
+        <div>
+          <input type="radio" name="drink" id="coffee" value="coffee">
+          <label for="coffee">Coffee</label>
+        </div>
+
+        <div>
+          <input type="radio" name="drink" id="soda" value="soda">
+          <label for="soda">Soda</label>
+        </div>
+
+        <div>
+          <input type="radio" name="drink" id="tea" value="tea">
+          <label for="tea">Tea</label>
+        </div>
       </fieldset>
 
       <fieldset>
