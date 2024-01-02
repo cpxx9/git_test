@@ -13,7 +13,25 @@
     <h1>Testing... Check Console</h1>
   </div>
   <main class="parent">
-    
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="full_name">Name:</label>
+          <input type="text" name="full_name" id="full_name">
+        </li>
+        <li>
+          <label for="email_address">Email:</label>
+          <input type="email" name="email_address" id="full_name">
+        </li>
+        <li>
+          <label for="email_message">Message:</label>
+          <textarea name="email_message" id="email_message"></textarea>
+        </li>
+        <li>
+          <button type="submit">Send message</button>
+        </li>
+      </ul>
+    </form>
   </main>
 </body>
 </html>
