@@ -17,18 +17,20 @@
       <ul>
         <li>
           <label for="full_name">Name:</label>
-          <input type="text" name="full_name" id="full_name">
+          <input type="text" name="full_name" id="full_name" value="John Smith">
         </li>
         <li>
           <label for="email_address">Email:</label>
-          <input type="email" name="email_address" id="email_address">
+          <input type="email" name="email_address" id="email_address" value="example@domain.com">
         </li>
         <li>
           <label for="email_message">Message:</label>
-          <textarea name="email_message" id="email_message"></textarea>
+          <textarea name="email_message" id="email_message" cols="30" rows="10">
+            Please type your message here...
+          </textarea>
         </li>
-        <li>
-          <button type="submit">Send message</button>
+        <li class="button">
+          <button type="submit">Send your message</button>
         </li>
       </ul>
     </form>
