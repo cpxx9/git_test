@@ -43,5 +43,9 @@ textarea:focus {
 }
 
 .button {
-  padding-left: 93px;
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.3em;
 }
