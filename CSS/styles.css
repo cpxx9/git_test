@@ -29,9 +29,16 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #999;
   border-radius: 1em;
-  padding-left: .75em;
+  padding: .3em .75em;
 }
 
 textarea {
   padding-top: .75em;
+  vertical-align: top;
+  height: 5em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
 }
