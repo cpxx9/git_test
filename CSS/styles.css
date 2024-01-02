@@ -33,7 +33,6 @@ textarea {
 }
 
 textarea {
-  padding-top: .75em;
   vertical-align: top;
   height: 5em;
 }
@@ -41,4 +40,8 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: #000;
+}
+
+.button {
+  padding-left: 93px;
 }
