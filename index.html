@@ -27,15 +27,15 @@
             <ul>
               <li>
                 <label for="xbox">Xbox</label>
-                <input type="checkbox" checked id="xbox" name="console" value="xbox">
+                <input type="checkbox" id="xbox" name="console" value="xbox">
               </li>
               <li>
                 <label for="playstation">Playstation</label>
-                <input type="checkbox" checked id="playstation" name="console"    value="playstation">
+                <input type="checkbox" id="playstation" name="console"    value="playstation">
               </li>
               <li>
                 <label for="nintendo-switch">Switch</label>
-                <input type="checkbox" checked id="nintendo-switch" name="console" value="nintendo-switch">
+                <input type="checkbox" id="nintendo-switch" name="console" value="nintendo-switch">
               </li>
               <li>
                 <label for="gaming-pc">Gaming PC</label>
@@ -52,7 +52,7 @@
               </li>
               <li>
                 <label for="express">Express (3-5 business days) -- Most popular!</label>
-                <input type="radio" id="express" name="shipping-method" value="express">
+                <input type="radio" id="express" name="shipping-method" value="express" checked>
               </li>
               <li>
                 <label for="two-day">2-day</label>
@@ -145,6 +145,16 @@
               required
               placeholder="MM/YY"
               pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+          </p>
+          <p>
+            <label for="promo_card">
+              <span>Picture of promo card:</span>
+            </label>
+            <input 
+              type="file" 
+              name="promo_card" 
+              id="promo_card"
+              accept="image/*;capture=camera" />
           </p>
         </section>
         <section>
