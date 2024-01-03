@@ -108,3 +108,8 @@ textarea:focus {
     top: 20px;
   }
 }
+
+section.shopping-info fieldset.shipping-method-fieldset {
+    width: 400px;
+    margin-top: 10px;
+}
