@@ -13,36 +13,13 @@
     <h1>Forms!</h1>
   </div>
   <main class="parent">
-    <form class="email-form" action="/my-handling-form-page" method="post">
-      <h2>Send us an email!</h2>
-      <ul>
-        <li>
-          <label for="full_name">Name:</label>
-          <input type="text" name="full_name" id="full_name" placeholder="John Smith">
-        </li>
-        <li>
-          <label for="email_address">Email:</label>
-          <input type="email" name="email_address" id="email_address" placeholder="example@domain.com">
-        </li>
-        <li>
-          <label for="email_message">Message:</label>
-          <textarea name="email_message" id="email_message" placeholder="Please type your message here..."></textarea>
-        </li>
-        <li class="button">
-          <button type="submit">Send your message</button>
-        </li>
-      </ul>
-    </form>
-
-    <br>
-
     <form class="payment-form" action="/my-handling-form-page">
       <h2>Payment Form</h2>
       <p>
         Required fields are followed by
         <strong><span aria-label="required">*</span></strong>
       </p>
-      <section>
+      <section class="contact-info">
         <h3>Contact information</h3>
         <fieldset>
           <legend>Title</legend>
@@ -72,8 +49,60 @@
             <span>Username: </span>
             <strong><span aria-label="required">*</span></strong>
           </label>
+          <input type="text" id="user_name" name="user_name" required>
+        </p>
+        <p>
+          <label for="email_address">
+            <span>Email: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="email" id="email_address" name="email_address" required>
+        </p>
+        <p>
+          <label for="password">
+            <span>Password: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input type="password" id="password" name="password" required>
         </p>
       </section>
+      <section class="payment-info">
+        <h3>Payment info:</h3>
+        <p>
+          <label for="card_type">
+            <span>Card type:</span>
+          </label>
+          <select name="card_type" id="card_type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option>
+            <option value="discover">Discover</option>
+          </select>
+        </p>
+      </section>
+    </form>
+
+    <br>
+
+    <form class="email-form" action="/my-handling-form-page" method="post">
+      <h2>Send us an email!</h2>
+      <ul>
+        <li>
+          <label for="full_name">Name:</label>
+          <input type="text" name="full_name" id="full_name" placeholder="John Smith">
+        </li>
+        <li>
+          <label for="email_address">Email:</label>
+          <input type="email" name="email_address" id="email_address" placeholder="example@domain.com">
+        </li>
+        <li>
+          <label for="email_message">Message:</label>
+          <textarea name="email_message" id="email_message" placeholder="Please type your message here..."></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
     </form>
   </main>
 </body>
