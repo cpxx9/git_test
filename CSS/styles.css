@@ -12,6 +12,10 @@ ul {
   margin: 0;
 }
 
+form h2 {
+  margin-top: 0;
+}
+
 form li + li {
   margin-top: 1em;
 }

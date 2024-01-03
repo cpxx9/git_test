@@ -13,7 +13,8 @@
     <h1>Forms!</h1>
   </div>
   <main class="parent">
-    <form action="/my-handling-form-page" method="post">
+    <form class="email-form" action="/my-handling-form-page" method="post">
+      <h2>Send us an email!</h2>
       <ul>
         <li>
           <label for="full_name">Name:</label>
@@ -31,6 +32,48 @@
           <button type="submit">Send your message</button>
         </li>
       </ul>
+    </form>
+
+    <br>
+
+    <form class="payment-form" action="/my-handling-form-page">
+      <h2>Payment Form</h2>
+      <p>
+        Required fields are followed by
+        <strong><span aria-label="required">*</span></strong>
+      </p>
+      <section>
+        <h3>Contact information</h3>
+        <fieldset>
+          <legend>Title</legend>
+          <ul>
+            <li>
+              <label for="title_1">
+                <input type="radio" id="title_1" name="title" value="A">
+                Ace
+              </label>              
+            </li>
+            <li>
+              <label for="title_2">
+                <input type="radio" id="title_2" name="title" value="K">
+                King
+              </label>              
+            </li>
+            <li>
+              <label for="title_3">
+                <input type="radio" id="title_3" name="title" value="Q">
+                Queen
+              </label>              
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="user_name">
+            <span>Username: </span>
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+        </p>
+      </section>
     </form>
   </main>
 </body>
