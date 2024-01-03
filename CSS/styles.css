@@ -1,9 +1,16 @@
 form {
   margin: 0 auto;
-  width: 400px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+}
+
+form.email-form {
+  width: min(400px, 65vw);
+}
+
+form.payment-form {
+  width: min(500px, calc(90vw - 20px));
 }
 
 ul {
@@ -20,16 +27,16 @@ form li + li {
   margin-top: 1em;
 }
 
-label {
+.email-form label {
   display: inline-block;
   width: 90px;
   text-align: right;
 }
 
-input,
-textarea {
+.email-form input,
+.email-form textarea {
   font: 1em sans-serif;
-  width: 300px;
+  width: min(300px, 65vw);
   box-sizing: border-box;
   border: 1px solid #999;
   border-radius: 1em;
@@ -39,6 +46,7 @@ textarea {
 textarea {
   vertical-align: top;
   height: 5em;
+  resize: vertical;
 }
 
 input:focus,
@@ -46,10 +54,57 @@ textarea:focus {
   border-color: #000;
 }
 
-.button {
+.email-form .button {
   padding-left: 90px;
 }
 
-button {
+.email-form button {
   margin-left: 0.3em;
+}
+
+.form-content {
+  margin: 0 auto;
+}
+
+.payment-form {
+  label span {
+    display: inline-block;
+    text-align: right;
+  }
+
+  input,
+  textarea {
+    font: 1em sans-serif;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: auto;
+    border: none;
+  }
+
+  fieldset {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+
+  button {
+    margin: 20px 0 0 0;
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+  }
+
+  p label {
+    width: 100%;
+  }
+
+  label em {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
 }
