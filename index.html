@@ -224,6 +224,7 @@
           </p>
         </section>
         <section>
+          <h2>Test inputs:</h2>
           <p>
             <label for="test_numbers">
               <span> Number test: </span>
@@ -270,6 +271,40 @@
               type="color"
               name="color_test"
               id="color_test" />
+          </p>
+          <p>
+            <label for="multi_dropdown">
+              <span>Multi-select dropdown:</span>
+              <span style="font-size: .8rem;">(press control and click on desktop)</span>
+            </label>
+            <select name="multi_dropdown" id="multi_dropdown" multiple size="8">
+              <optgroup label="Fruits">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+              </optgroup>
+              <optgroup label="Vegetables">
+                <option value="carrot">Carrot</option>
+                <option value="green_bean">Green bean</option>
+                <option value="lettuce">Lettuce</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="auto_complete">
+              <span>Auto-complete text box for fruits:</span>
+            </label>
+            <input type="text" name="auto_complete" id="auto_complete" list="suggestions"/>
+            <datalist id="suggestions">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blackberry</option>
+              <option>Blueberry</option>
+              <option>Lemon</option>
+              <option>Lychee</option>
+              <option>Peach</option>
+              <option>Pear</option>
+            </datalist>
           </p>
         </section>
       </div>
