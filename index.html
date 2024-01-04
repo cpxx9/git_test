@@ -31,15 +31,28 @@
               </li>
               <li>
                 <label for="playstation">Playstation</label>
-                <input type="checkbox" id="playstation" name="console"    value="playstation">
+                <input 
+                  type="checkbox" 
+                  id="playstation" 
+                  name="console"    
+                  value="playstation" />
               </li>
               <li>
                 <label for="nintendo-switch">Switch</label>
-                <input type="checkbox" id="nintendo-switch" name="console" value="nintendo-switch">
+                <input 
+                  type="checkbox" 
+                  id="nintendo-switch" 
+                  name="console" 
+                  value="nintendo-switch" />
               </li>
               <li>
                 <label for="gaming-pc">Gaming PC</label>
-                <input type="checkbox" checked id="gaming-pc" name="console" value="gaming-pc">
+                <input 
+                  checked
+                  type="checkbox"                    
+                  id="gaming-pc" 
+                  name="console" 
+                  value="gaming-pc" />
               </li>
             </ul>
           </fieldset>
@@ -48,15 +61,28 @@
             <ul>
               <li>
                 <label for="standard">Standard (5-7 business days)</label>
-                <input type="radio" id="standard" name="shipping-method" value="standard">
+                <input 
+                  type="radio" 
+                  id="standard" 
+                  name="shipping-method" 
+                  value="standard" />
               </li>
               <li>
                 <label for="express">Express (3-5 business days) -- Most popular!</label>
-                <input type="radio" id="express" name="shipping-method" value="express" checked>
+                <input 
+                  checked  
+                  type="radio" 
+                  id="express" 
+                  name="shipping-method" 
+                  value="express" />
               </li>
               <li>
                 <label for="two-day">2-day</label>
-                <input type="radio" id="two-day" name="shipping-method" value="two-day">
+                <input 
+                  type="radio" 
+                  id="two-day" 
+                  name="shipping-method" 
+                  value="two-day" />
               </li>
             </ul>
           </fieldset>
@@ -68,19 +94,31 @@
             <ul>
               <li>
                 <label for="title_1">
-                  <input type="radio" id="title_1" name="title" value="A">
+                  <input 
+                    type="radio" 
+                    id="title_1" 
+                    name="title" 
+                    value="A" />
                   Ace
                 </label>
               </li>
               <li>
                 <label for="title_2">
-                  <input type="radio" id="title_2" name="title" value="K">
+                  <input 
+                    type="radio" 
+                    id="title_2" 
+                    name="title" 
+                    value="K" />
                   King
                 </label>
               </li>
               <li>
                 <label for="title_3">
-                  <input type="radio" id="title_3" name="title" value="Q">
+                  <input 
+                    type="radio" 
+                    id="title_3" 
+                    name="title" 
+                    value="Q" />
                   Queen
                 </label>
               </li>
@@ -91,21 +129,33 @@
               <span>Username: </span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="text" id="user_name" name="user_name" required>
+            <input 
+              type="text" 
+              id="user_name" 
+              name="user_name" 
+              required />
           </p>
           <p>
             <label for="email_address">
               <span>Email: </span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="email" id="email_address" name="email_address" required>
+            <input 
+              required  
+              type="email" 
+              id="email_address" 
+              name="email_address" />
           </p>
           <p>
             <label for="password">
               <span>Password: </span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="password" id="password" name="password" required>
+            <input 
+              required
+              type="password" 
+              id="password" 
+              name="password" />
           </p>
         </section>
         <section class="payment-info">
@@ -131,7 +181,7 @@
               id="card_number"
               name="card_number"
               required
-              placeholder="XXXX XXXX XXXX XXXX">
+              placeholder="XXXX XXXX XXXX XXXX" />
           </p>
           <p>
             <label for="card_expiration">
@@ -215,9 +265,9 @@
               <span>Color test:</span>
             </label>
             <input 
-            type="color"
-            name="color_test"
-            id="color_test" />
+              type="color"
+              name="color_test"
+              id="color_test" />
           </p>
         </section>
       </div>
@@ -230,15 +280,28 @@
       <ul>
         <li>
           <label for="full_name">Name:</label>
-          <input type="text" name="full_name" id="full_name" placeholder="John Smith">
+          <input 
+            type="text" 
+            name="full_name" 
+            id="full_name" 
+            placeholder="John Smith" />
         </li>
         <li>
           <label for="second_email_address">Email:</label>
-          <input type="email" name="second_email_address" id="second_email_address" placeholder="example@domain.com">
+          <input 
+            type="email" 
+            name="second_email_address" 
+            id="second_email_address" 
+            placeholder="example@domain.com" />
         </li>
         <li>
           <label for="email_message">Message:</label>
-          <textarea spellcheck="true" name="email_message" id="email_message" placeholder="Please type your message here..."></textarea>
+          <textarea 
+            spellcheck="true" 
+            name="email_message" 
+            id="email_message" 
+            placeholder="Please type your message here...">
+          </textarea>
         </li>
         <li class="button">
           <button type="submit">Send your message</button>
