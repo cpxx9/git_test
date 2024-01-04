@@ -171,6 +171,55 @@
               value="123456789" />
           </p>
         </section>
+        <section>
+          <p>
+            <label for="test_numbers">
+              <span> Number test: </span>
+            </label>
+            <input 
+              type="number" 
+              id="test_numbers" 
+              name="test_numbers" 
+              min="0" 
+              max="1"  
+              step="0.01" />
+          </p>
+          <p>
+            <label for="test_slider">
+              <span>Slider test: </span>
+            </label>
+            <input 
+              type="range" 
+              id="test_slider" 
+              name="test_slider" 
+              value="8192"
+              min="0" 
+              max="65536"  
+              step="8" />
+            <output class="price-output" for="test_slider"></output>
+          </p>
+          <p>
+            <label for="date_test">
+              <span>Date test:</span>
+            </label>
+            <input 
+              type="date"
+              id="date_test"
+              name="date_test"
+              min="2023-05-01"
+              max="2023-09-30"
+              step="1" />
+          </p>
+          <p>
+            <label for="color_test">
+              <span>Color test:</span>
+            </label>
+            <input 
+            type="color"
+            name="color_test"
+            id="color_test" />
+          </p>
+        </section>
       </div>
     </form>
 
@@ -184,8 +233,8 @@
           <input type="text" name="full_name" id="full_name" placeholder="John Smith">
         </li>
         <li>
-          <label for="email_address">Email:</label>
-          <input type="email" name="email_address" id="email_address" placeholder="example@domain.com">
+          <label for="second_email_address">Email:</label>
+          <input type="email" name="second_email_address" id="second_email_address" placeholder="example@domain.com">
         </li>
         <li>
           <label for="email_message">Message:</label>
