@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "handwriting";
+  src: 
+    url("../fonts/journal-webfont.woff2") format("woff2"),
+    url("../fonts/journal-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "typewriter";
+  src: 
+    url("../fonts/mom-webfont.woff2") format("woff2"),
+    url("../fonts/mom-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
 	background-color: #f4f4f4;
 	color: #555;
