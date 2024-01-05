@@ -1,8 +1,18 @@
+/* Inherit fonts from parent element */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 form {
   margin: 0 auto;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+  font: 1em sans-serif;
 }
 
 form.email-form {
@@ -35,7 +45,6 @@ form li + li {
 
 .email-form input,
 .email-form textarea {
-  font: 1em sans-serif;
   width: min(300px, 65vw);
   box-sizing: border-box;
   border: 1px solid #999;
@@ -72,11 +81,6 @@ textarea:focus {
     text-align: right;
   }
 
-  input,
-  textarea {
-    font: 1em sans-serif;
-  }
-
   input[type="checkbox"],
   input[type="radio"] {
     width: auto;
@@ -107,6 +111,11 @@ textarea:focus {
     right: 5px;
     top: 20px;
   }
+}
+
+#card_expiration {
+  width: 54px;
+  padding-left: 4px;
 }
 
 section.shopping-info fieldset.shipping-method-fieldset {
