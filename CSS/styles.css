@@ -113,6 +113,16 @@ textarea:focus {
   }
 }
 
+fieldset {
+  position: relative;
+}
+
+legend.title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 #card_expiration {
   width: 54px;
   padding-left: 4px;
