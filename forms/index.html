@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,15 +9,28 @@
   <script src='JS/scripts.js' defer></script>
 </head>
 <body>
-	<header class="speaker-form-header">
+	<header class='speaker-form-header'>
     <h1>Speaker Submission</h1>
     <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
   </header>
-  <form action="" method="get" class="speaker-form">
-    <div class="form-row">
-      <label for="full_name">Name</label>
-      <input type="text" name="full_name" id="full_name">
+  <form action='' method='get' class='speaker-form'>
+    <div class='form-row'>
+      <label for='full_name'>Name</label>
+      <input type='text' name='full_name' id='full_name'>
     </div>
+    <div class='form-row'>
+      <label for='email_address'>Email</label>
+      <input type='email' name='email_address' id='email_address' placeholder='john@doe.com'>
+    </div>
+    <fieldset class='legacy-form-row'>
+      <legend>Type of Talk</legend>
+      <input 
+        type='radio'
+        name='talk-type'
+        id='talk-type-1'
+        value='main-stage' />
+      <label for='talk-type-1' class='radio-label'></label>
+    </fieldset>
   </form>
 </body>
 </html>
