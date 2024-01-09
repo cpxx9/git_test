@@ -1,139 +1,121 @@
-/* Inherit fonts from parent element */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-}
-
 * {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form {
-  margin: 0 auto;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  font: 1em;
-}
-
-form.email-form {
-  width: min(400px, 65vw);
-}
-
-form.payment-form {
-  width: min(500px, calc(90vw - 20px));
-}
-
-ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-form h2 {
-  margin-top: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-.email-form label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-.email-form input,
-.email-form textarea {
-  width: min(300px, 65vw);
+  padding: 0;
   box-sizing: border-box;
-  border: 1px solid #999;
-  border-radius: 1em;
-  padding: .3em .75em;
 }
 
-textarea {
-  vertical-align: top;
-  height: 5em;
-  resize: vertical;
+body {
+  color: #5D6063;
+  background-color: #EAEDF0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #000;
+.speaker-form-header {
+  text-align: center;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
 }
 
-.email-form .button {
-  padding-left: 90px;
+.speaker-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.email-form button {
-  margin-left: 0.3em;
+.speaker-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 80%;
+  margin: 0 0 40px 0;
+  padding: 50px;
 }
 
-.form-content {
-  margin: 0 auto;
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.payment-form {
-  label span {
-    display: inline-block;
-    text-align: right;
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 2px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus {
+  border: 2px solid lightskyblue;
+  color: lightskyblue;
+  box-shadow: none;
+}
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    width: auto;
-    border: none;
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
 
-  fieldset {
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row select,
+  .form-row textarea {
     width: 250px;
-    box-sizing: border-box;
-    border: 1px solid #999;
+    height: initial;
   }
 
-  button {
-    margin: 20px 0 0 0;
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
   }
-
-  label {
-    position: relative;
-    display: inline-block;
-  }
-
-  p label {
-    width: 100%;
-  }
-
-  label em {
-    position: absolute;
-    right: 5px;
-    top: 20px;
-  }
-}
-
-fieldset {
-  position: relative;
-}
-
-legend.title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-weight: bolder;
-}
-
-#card_expiration {
-  width: 54px;
-  padding-left: 4px;
-}
-
-section.shopping-info fieldset.shipping-method-fieldset {
-    width: 400px;
-    margin-top: 10px;
 }
