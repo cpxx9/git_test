@@ -84,14 +84,6 @@ body {
   margin-bottom: 30px;
 }
 
-.form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid {
-  border: 2px solid #D55C5F;
-  outline: #D55C5F;
-  color: #D55C5F;
-  box-shadow: none;
-}
-
 .form-row input[type='text']:focus,
 .form-row input[type='email']:focus,
 .form-row select:focus,
@@ -100,6 +92,15 @@ body {
   outline-color: lightskyblue;
   box-shadow: none;
 }
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 2px solid #D55C5F;
+  outline: #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
 
 .legacy-form-row {
   border: none;
