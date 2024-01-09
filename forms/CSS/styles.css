@@ -50,7 +50,9 @@ body {
 }
 
 .form-row input[type='text'],
-.form-row input[type='email'] {
+.form-row input[type='email'],
+.form-row select,
+.form-row textarea {
   background-color: #FFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -63,17 +65,38 @@ body {
   margin-bottom: 15px;
 }
 
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
 .form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid {
+.form-row input[type='email']:invalid, {
   border: 2px solid #D55C5F;
   color: #D55C5F;
   box-shadow: none;
 }
 
 .form-row input[type='text']:focus,
-.form-row input[type='email']:focus {
+.form-row input[type='email']:focus,
+.form-row select:focus,
+.form-row textarea:focus {
   border: 2px solid lightskyblue;
-  color: lightskyblue;
+  outline-color: lightskyblue;
   box-shadow: none;
 }
 
@@ -137,5 +160,9 @@ body {
     text-align: right;
     padding-right: 20px;
     float: left;
+  }
+
+  .form-row .instructions {
+    margin-left: 120px;
   }
 }
