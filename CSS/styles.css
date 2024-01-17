@@ -1,35 +1,13 @@
-html {
-  font-family: sans-serif;
+.container {
+  display: grid;
+  /* grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px; */
+  grid-template: 50px 50px/ 50px 50px; /*shorthand, rows / columns*/
+  grid-auto-flow: column;
+  grid-auto-rows: 50px;
+  grid-auto-columns: 50px;
 }
 
-body {
-  margin: 0;
-}
-
-header {
-  background: purple;
-  height: 100px;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  line-height: 100px;
-  margin: 0;
-}
-
-article {
-  padding: 10px;
-  margin: 10px;
-  background: aqua;
-  flex: 1 200px;
-}
-
-section {
-  display: flex;
-  align-items: center;
-}
-
-article:nth-of-type(3) {
-  flex:2 200px;
+.container > div {
+  border: 1px solid blue;
 }
