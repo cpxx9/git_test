@@ -1,12 +1,29 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   /* grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px; */
-  grid-template: 50px 50px/ 50px 50px; /*shorthand, rows / columns*/
-  column-gap: 10px;
-  row-gap: 30px;
+  grid-template: 100px 100px 100px / 100px 100px 100px;
+  gap: 20px;
+  justify-content: center;
+  height: 100dvh;
+  align-content: center;
 }
 
-.container > div {
-  border: 1px solid blue;
+.item {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+.first-row {
+  background-color: pink;
+}
+
+.last-column {
+  background-color: lightblue;
 }
