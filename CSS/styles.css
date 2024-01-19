@@ -3,9 +3,8 @@
   /* grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px; */
   grid-template: 50px 50px/ 50px 50px; /*shorthand, rows / columns*/
-  grid-auto-flow: column;
-  grid-auto-rows: 50px;
-  grid-auto-columns: 50px;
+  column-gap: 10px;
+  row-gap: 30px;
 }
 
 .container > div {
