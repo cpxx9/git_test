@@ -61,3 +61,60 @@
 // let hero1 = new Warrior('Bjorn', 1, 'axe');
 // let hero2 = new Healer('Kanin', 1, 'cure');
 
+// class User {
+//   constructor(email, name){
+//     this.email = email;
+//     this.name = name;
+//     this.score = 0;
+//   }
+//   login() {
+//     console.log(this.email, 'just logged in');
+//     return this;
+//   }
+//   logout() {
+//     console.log(this.email, 'just logged out');
+//     return this;
+//   }
+//   updateScore(repeatAmt = 1) {
+//     for(let i = 0; i < repeatAmt; i++) {
+//       this.score ++;
+//       console.log(this.email, 'score is now', this.score);
+//     }
+//     return this;
+//   }
+// }
+
+// class Admin extends User {
+//   deleteUser(userToDel) {
+//     users = users.filter(user => {
+//       return user.email != userToDel.email;
+//     });
+//   }
+// }
+
+// let userOne = new User('c@p.com', 'cole');
+// let userTwo = new User('rock@p.com', 'rock');
+// let admin = new Admin('admin@c.com', 'admin');
+
+// let users = [userOne, userTwo, admin];
+
+// admin.deleteUser(userOne);
+
+// console.log(users);
+
+let userOne = new User('c@p.com', 'cole');
+let userTwo = new User('rock@p.com', 'rock');
+
+function User(email, name) {
+  this.email = email;
+  this.name = name;
+  this.online = false;
+  this.login = function() {
+    console.log(this.email, 'just logged in');
+    return this;
+  };
+  this.logout = function() {
+    console.log(this.email, 'just logged out');
+    return this;
+  };
+}

@@ -1,23 +1,6 @@
-.layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-.child {
-  background: orange;
+h1 {
   text-align: center;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.last-row {
-  grid-column: 1 / 3;
-}
-
-.child > div {
-  height: 50px;
-  background: darkred;
-  flex: 0 1 30%;
+  color: #444;
+  font-family: 'Trebuchet MS';
+  margin: 60px auto;
 }
