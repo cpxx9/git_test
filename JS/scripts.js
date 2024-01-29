@@ -101,20 +101,41 @@
 // admin.deleteUser(userOne);
 
 // console.log(users);
-
-let userOne = new User('c@p.com', 'cole');
-let userTwo = new User('rock@p.com', 'rock');
-
 function User(email, name) {
   this.email = email;
   this.name = name;
   this.online = false;
-  this.login = function() {
-    console.log(this.email, 'just logged in');
-    return this;
-  };
-  this.logout = function() {
-    console.log(this.email, 'just logged out');
-    return this;
-  };
+  this.role = 'stdUser';
 }
+
+User.prototype.login = function() {
+  this.online = true;
+  console.log(this.email, 'just logged in');
+}
+
+User.prototype.logout = function() {
+  this.online = false;
+  console.log(this.email, 'just logged out');
+}
+
+function Admin(...args) {
+  User.apply(this, args);
+  this.role = 'admin';
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser = function(userToDel) {
+  users = users.filter(user => {
+    return user.email != userToDel.email;
+  });
+};
+
+let userOne = new User('c@p.com', 'cole');
+let userTwo = new User('rock@p.com', 'rock');
+
+let admin = new Admin('admin@c.com', 'admin');
+
+let users = [userOne, userTwo, admin];
+
+console.table(users);
