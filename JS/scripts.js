@@ -6,7 +6,8 @@ const User = function (name) {
 //above can be re-written as a factory
 function createUser (name) {
   const discordName = `@${name}`;
-  return {name, discordName};
+  return {name, discordName};        // shorthand for {name: name, discordName: discordName}
+                                     // if variable name is same as property name, can use shorthand
 }
 
 //does not require new keyword
