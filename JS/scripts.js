@@ -1,10 +1,13 @@
-function go() {
-  const hair = 'blonde';
-  const age = 200;
-  console.log(hair);
-  console.log(age);  
+const User = function (name) {
+  this.name = name;
+  this.discordName = `@${name}`;
 }
 
-go();
-const age = 100;
-console.log(age);
+//above can be re-written as a factory
+function createUser (name) {
+  const discordName = `@${name}`;
+  return {name, discordName};
+}
+
+//does not require new keyword
+
