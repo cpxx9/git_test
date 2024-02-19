@@ -5,8 +5,8 @@
 */
 
 function Gameboard() {
-  const rows = 6;
-  const columns = 7;
+  const rows = 3;
+  const columns = 3;
   const board = [];
 
   // Create a 2d array that will represent the state of the game board
@@ -26,27 +26,28 @@ function Gameboard() {
 
   // In order to drop a token, we need to find what the lowest point of the
   // selected column is, *then* change that cell's value to the player number
-  const dropToken = (column, player) => {
+  const dropToken = (row, column, player) => {
     // Our board's outermost array represents the row,
     // so we need to loop through the rows, starting at row 0,
     // find all the rows that don't have a token, then take the
     // last one, which will represent the bottom-most empty cell
-    const availableCells = board.filter((row) => row[column].getValue() === 0).map(row => row[column]);
+    let isMoveValid = false;
+    board[row][column].getValue() === 0 ? isMoveValid = true : isMoveValid = false;
 
     // If no cells make it through the filter, 
     // the move is invalid. Stop execution.
-    if (!availableCells.length) return;
-
-    // Otherwise, I have a valid cell, the last one in the filtered array
-    const lowestRow = availableCells.length - 1;
-    board[lowestRow][column].addToken(player);
+    if (!isMoveValid) {
+      return;
+    } else {  
+      board[row][column].addToken(player);
+    }
   };
 
   // This method will be used to print our board to the console.
   // It is helpful to see what the board looks like after each turn as we play,
   // but we won't need it after we build our UI
   const printBoard = () => {
-    const boardWithCellValues = board.map((row) => row.map((cell) => cell.getValue()))
+    const boardWithCellValues = board.map((row) => row.map((cell) => cell.getValue()));
     console.log(boardWithCellValues);
   };
 
@@ -113,12 +114,12 @@ function GameController(
     console.log(`${getActivePlayer().name}'s turn.`);
   };
 
-  const playRound = (column) => {
+  const playRound = (column, row) => {
     // Drop a token for the current player
     console.log(
-      `Dropping ${getActivePlayer().name}'s token into column ${column}...`
+      `Dropping ${getActivePlayer().name}'s token into row ${row}, column ${column}...`
     );
-    board.dropToken(column, getActivePlayer().token);
+    board.dropToken(row, column, getActivePlayer().token);
 
     /*  This is where we would check for a winner and handle that logic,
         such as a win message. */
