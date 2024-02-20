@@ -1,15 +1,49 @@
-function User(name, birthday) {
-  this.name = name;
-  this.birthday = birthday;
+class Polygon {
+  constructor(height, width) {
+    this.name = 'Polygon';
+    this.height = height;
+    this.width = width;
+  }
 
-  Object.defineProperty(this, "age", {
-    get() {
-      let todayYear = new Date().getFullYear();
-      return todayYear - this.birthday.getFullYear();
-    }
-  });
+  sayName() {
+    console.log(`Hi I am a ${this.name}.`);
+  }
+
+  sayHistory () {
+    console.log('"Polygon" is derived from the Greek polus (many) and gonia (angle).');
+  }
 }
 
-let john = new User("John", new Date(1992, 6, 1));
+let p = new Polygon(300, 400);
+p.sayName();
+console.log(`My width is ${p.width}.`);
 
-console.log(john.age)
+class Square extends Polygon {
+  constructor(length) {
+    super(length, length);
+    this.name = 'Square';
+  }
+
+  get area() {
+    return this.height * this.width
+  }
+  set area(value) {
+    this.area = value;
+  }
+}
+
+const s = new Square(5);
+
+class Rectangle extends Polygon {
+  constructor(height, width) {
+    super(height, width);
+    this.name = 'Rectangle';
+  }
+
+  sayName() {
+    console.log(`Sup! I am a ${this.name}.`);
+    super.sayHistory();
+  }  
+}
+
+let r = new Rectangle(12, 20);
