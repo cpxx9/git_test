@@ -47,3 +47,18 @@ class Rectangle extends Polygon {
 }
 
 let r = new Rectangle(12, 20);
+
+class Triple {
+  static triple(n) {
+    n = n || 1;
+    return n * 3;
+  }
+}
+
+class BiggerTriple extends Triple {
+  static triple(n) {
+    return super.triple(n) * super.triple(n);
+  }
+}
+
+let tp = new Triple();
