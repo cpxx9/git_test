@@ -1,0 +1,16 @@
+{
+  "name": "git_test",
+  "version": "1.0.0",
+  "description": "My first Github repo\r Hello Odin!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CJP Labs <prattecole@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
