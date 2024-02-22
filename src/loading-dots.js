@@ -1,4 +1,4 @@
-setInterval(loadingDots, 500);
+
 
 function loadingDots() {
   const title = document.querySelector("#title");
@@ -12,3 +12,5 @@ function loadingDots() {
     title.textContent = "Testing";
   }
 }
+
+export { loadingDots };
