@@ -4,7 +4,8 @@
   "description": "My first Github repo\r Hello Odin!",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "CJP Labs <prattecole@gmail.com>",
