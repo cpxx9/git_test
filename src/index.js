@@ -1,5 +1,5 @@
-import _ from 'lodash';
 import { loadingDots } from './loading-dots';
+import _ from 'lodash';
 
 setInterval(loadingDots, 500);
 
