@@ -1,5 +1,3 @@
-
-
 function loadingDots() {
   const title = document.querySelector("#title");
   if (title.textContent === "Testing") {
