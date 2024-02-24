@@ -1,18 +1,15 @@
 @font-face {
-  font-family: 'Anta';
-  src: url('../fonts/Anta-Regular.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'Kode';
+  src: url('../fonts/KodeMono.ttf') format('ttf');
 }
 
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
 .hello { 
   color: blue;
-  font-family: 'Anta', Helvetica, sans-serif;
+  font-family: 'Kode';
   background: url('../img/odin.png');
 }
