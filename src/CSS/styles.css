@@ -6,4 +6,5 @@ body {
 
 .hello { 
   color: blue;
+  background: url('../img/odin.png');
 }
