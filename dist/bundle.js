@@ -147,7 +147,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loading_dots__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loading-dots */ \"./src/JS/loading-dots.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _myName__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./myName */ \"./src/JS/myName.js\");\n/* harmony import */ var _CSS_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../CSS/styles.css */ \"./src/CSS/styles.css\");\n/* harmony import */ var _img_odin_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/odin.png */ \"./src/img/odin.png\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.toml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.yaml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.json5'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\n\n\n\n\n\nsetInterval(_loading_dots__WEBPACK_IMPORTED_MODULE_0__.loadingDots, 500);\n\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.toml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())); // output `TOML Example`\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.toml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).name); // output `Tom Preston-Werner`\n\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.yaml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())); // output `YAML Example`\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.yaml'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).name); // output `Tom Preston-Werner`\n\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.json5'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())); // output `JSON5 Example`\nconsole.log(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './data.json5'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).name); // output `Tom Preston-Werner`\n\nfunction component() {\n  const element = document.createElement('div');\n\n  element.textContent = (0,_myName__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('Cole');\n  element.textContent += lodash__WEBPACK_IMPORTED_MODULE_1___default().join(['Hello', 'webpack'], ' ');\n  element.classList.add('hello');\n\n  const myIcon = new Image();\n  myIcon.src = _img_odin_png__WEBPACK_IMPORTED_MODULE_4__;\n\n  element.appendChild(myIcon);\n\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://git_test/./src/JS/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loading_dots__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loading-dots */ \"./src/JS/loading-dots.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _myName__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./myName */ \"./src/JS/myName.js\");\n/* harmony import */ var _CSS_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../CSS/styles.css */ \"./src/CSS/styles.css\");\n/* harmony import */ var _img_odin_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/odin.png */ \"./src/img/odin.png\");\n/* harmony import */ var _data_data_toml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../data/data.toml */ \"./src/data/data.toml\");\n/* harmony import */ var _data_data_yaml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data/data.yaml */ \"./src/data/data.yaml\");\n/* harmony import */ var _data_data_json5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../data/data.json5 */ \"./src/data/data.json5\");\n\n\n\n\n\n\n\n\n\nsetInterval(_loading_dots__WEBPACK_IMPORTED_MODULE_0__.loadingDots, 500);\n\nconsole.log(_data_data_toml__WEBPACK_IMPORTED_MODULE_5__.title); // output `TOML Example`\nconsole.log(_data_data_toml__WEBPACK_IMPORTED_MODULE_5__.owner.name); // output `Tom Preston-Werner`\n\nconsole.log(_data_data_yaml__WEBPACK_IMPORTED_MODULE_6__.title); // output `YAML Example`\nconsole.log(_data_data_yaml__WEBPACK_IMPORTED_MODULE_6__.owner.name); // output `Tom Preston-Werner`\n\nconsole.log(_data_data_json5__WEBPACK_IMPORTED_MODULE_7__.title); // output `JSON5 Example`\nconsole.log(_data_data_json5__WEBPACK_IMPORTED_MODULE_7__.owner.name); // output `Tom Preston-Werner`\n\nfunction component() {\n  const element = document.createElement('div');\n\n  element.textContent = (0,_myName__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('Cole');\n  element.textContent += lodash__WEBPACK_IMPORTED_MODULE_1___default().join(['Hello', 'webpack'], ' ');\n  element.classList.add('hello');\n\n  const myIcon = new Image();\n  myIcon.src = _img_odin_png__WEBPACK_IMPORTED_MODULE_4__;\n\n  element.appendChild(myIcon);\n\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://git_test/./src/JS/index.js?");
 
 /***/ }),
 
@@ -192,6 +192,39 @@ eval("module.exports = __webpack_require__.p + \"118ab4be98d7558bfd06.woff2\";\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"4ad98b6a97d04c53c68c.png\";\n\n//# sourceURL=webpack://git_test/./src/img/odin.png?");
+
+/***/ }),
+
+/***/ "./src/data/data.json5":
+/*!*****************************!*\
+  !*** ./src/data/data.json5 ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = /*#__PURE__*/JSON.parse('{\"title\":\"JSON5 Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://git_test/./src/data/data.json5?");
+
+/***/ }),
+
+/***/ "./src/data/data.toml":
+/*!****************************!*\
+  !*** ./src/data/data.toml ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = /*#__PURE__*/JSON.parse('{\"title\":\"TOML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://git_test/./src/data/data.toml?");
+
+/***/ }),
+
+/***/ "./src/data/data.yaml":
+/*!****************************!*\
+  !*** ./src/data/data.yaml ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = /*#__PURE__*/JSON.parse('{\"title\":\"YAML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://git_test/./src/data/data.yaml?");
 
 /***/ })
 
