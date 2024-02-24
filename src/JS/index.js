@@ -3,9 +3,9 @@ import _ from 'lodash';
 import myName from './myName';
 import '../CSS/styles.css';
 import Odin from '../img/odin.png'
-import toml from './data.toml';
-import yaml from './data.yaml';
-import json from './data.json5';
+import toml from '../data.toml';
+import yaml from '../data.yaml';
+import json from '../data.json5';
 
 setInterval(loadingDots, 500);
 
