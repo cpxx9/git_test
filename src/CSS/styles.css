@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'Kode';
-  src: url('../fonts/KodeMono.ttf') format('ttf');
+  font-family: 'Anta';
+  src: url('../fonts/anta.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
@@ -10,6 +12,6 @@ body {
 
 .hello { 
   color: blue;
-  font-family: 'Kode';
+  font-family: 'Anta';
   background: url('../img/odin.png');
 }
