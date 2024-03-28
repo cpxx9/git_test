@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title id="title"><%= htmlWebpackPlugin.options.title %></title>
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title id="title">
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
+
 <body>
-  <header>
-
-  </header>
-
-  <section>
-
+  <section aria-label="Newest Photos">
+    <div class="carousel">
+      <button class="carousel-btn prev">&#8656;</button>
+      <button class="carousel-btn next">&#8658;</button>
+      <ul>
+        <li class="slide">
+          <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image 1">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image 2">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image 3">
+        </li>
+      </ul>
+    </div>
   </section>
 </body>
+
 </html>
