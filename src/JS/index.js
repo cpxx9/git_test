@@ -1,9 +1,11 @@
 import '../CSS/styles.css';
+
 const buttons = document.querySelectorAll('[data-carousel-btn]');
 const slider = document.querySelector('[data-slider]');
 const imageSlides = document.querySelectorAll('.slide');
+const sliderBtns = slider.children;
 
-for (let i = 0; i < imageSlides.length; i++) {
+for (let i = 0; i < imageSlides.length; i += 1) {
   const slideBtn = document.createElement('input');
   slideBtn.type = 'radio';
   slideBtn.name = 'radio-btn';
@@ -20,7 +22,6 @@ buttons.forEach((button) => {
     const slides = button
       .closest('[data-carousel]')
       .querySelector('[data-slides]');
-    const sliderBtns = slider.children;
 
     const activeSlide = slides.querySelector('[data-active]');
     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
@@ -33,10 +34,14 @@ buttons.forEach((button) => {
   });
 });
 
-const radios = document.querySelectorAll('.radio-btn');
+function updateRadios(e) {
+  const activeSlide = document.querySelector('[data-active]');
+  const slides = document.querySelector('[data-slides]');
+  slides.children[e.target.dataset.radio].dataset.active = true;
+  delete activeSlide.dataset.active;
+}
 
-radios.forEach((child) => {
-  child.addEventListener('checked', (e) => {
-    console.log(test);
-  });
+const radios = document.querySelectorAll('.radio-btn');
+radios.forEach((radio) => {
+  radio.addEventListener('click', updateRadios);
 });
