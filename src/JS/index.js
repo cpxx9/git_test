@@ -1,33 +1,30 @@
 import '../CSS/styles.css';
 
-const form = document.querySelector('form');
 const email = document.getElementById('mail');
-const emailError = document.querySelector('#mail + span.error');
+
+const form = document.querySelector('form');
 
 email.addEventListener('input', (e) => {
-  if (email.validity.valid) {
-    emailError.textContent = '';
-    emailError.className = 'error';
+  if (email.validity.valueMissing) {
+    email.setCustomValidity('Please enter an email!');
+  } else if (email.validity.typeMismatch) {
+    email.setCustomValidity('Email must have an @ symbol');
+  } else if (email.validity.tooShort) {
+    email.setCustomValidity('Email must be at least 10 characters.');
   } else {
-    showError();
+    email.setCustomValidity('');
   }
 });
 
 form.addEventListener('submit', (e) => {
-  if (!email.validity.valid) {
-    showError();
-    e.preventDefault();
-  }
-});
-
-function showError() {
   if (email.validity.valueMissing) {
-    emailError.textContent = 'You need to enter an email address.';
+    email.setCustomValidity('Please enter an email!');
   } else if (email.validity.typeMismatch) {
-    emailError.textContent = 'Entered value is not a valid email address.';
+    email.setCustomValidity('Not a valid email!');
   } else if (email.validity.tooShort) {
-    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+    email.setCustomValidity('Email must be at least 10 characters!');
+  } else {
+    email.setCustomValidity('');
   }
-
-  emailError.className = 'error active';
-}
+  e.preventDefault();
+});
