@@ -11,9 +11,14 @@
 </head>
 
 <body>
-  <form>
-    <label for="choose"> Banana or Cherry?</label>
-    <input id="choose" name="i-like" required pattern="[Bb]anana|[Cc]herry" />
+  <form novalidate>
+    <p>
+      <label for="mail">
+        <span>Please enter an email address:</span>
+        <input type="email" id="mail" name="mail" required minlength="8" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
     <button>Submit</button>
   </form>
 </body>
