@@ -14,10 +14,11 @@ input:valid {
   border: 1px solid black;
 }
 
-input:invalid {
+input:invalid,
+input:focus:invalid {
   border: 2px dashed red;
 }
 
-input:focus:invalid {
-  border: 2px dashed red;
+input:focus {
+  outline: none;
 }
