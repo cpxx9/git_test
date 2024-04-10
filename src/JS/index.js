@@ -1,7 +1,7 @@
 import '../CSS/styles.css';
 
-const userLeft = true;
-const userWatchingCatMeme = false;
+// const userLeft = false;
+// const userWatchingCatMeme = false;
 
 // function watchTutorialCallback(callback, errorCallback) {
 //   if (userLeft) {
@@ -53,3 +53,21 @@ const userWatchingCatMeme = false;
 //   .catch((error) => {
 //     console.log(`${error.name}: ${error.message}`);
 //   });
+
+// const recordVideoOne = new Promise((resolve, reject) => {
+//   resolve('Video 1 Recorded');
+// });
+
+// const recordVideoTwo = new Promise((resolve, reject) => {
+//   resolve('Video 2 Recorded');
+// });
+
+// const recordVideoThree = new Promise((resolve, reject) => {
+//   resolve('Video 3 Recorded');
+// });
+
+// const promiseArr = [recordVideoOne, recordVideoTwo, recordVideoThree];
+
+// Promise.race(promiseArr).then((message) => {
+//   console.log(message);
+// });
