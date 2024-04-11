@@ -1,87 +1,37 @@
 import '../CSS/styles.css';
 
-// function getWeather() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve('cloudy');
-//     }, 500);
-//   });
-// }
+const links = [
+  'https://jsonplaceholder.typicode.com/posts/1/comments',
+  'https://jsonplaceholder.typicode.com/comments',
+  'https://jsonplaceholder.typicode.com/posts',
+];
 
-// function getWeahterIcon(weather) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       switch (weather) {
-//         case 'Sunny':
-//           resolve('☀️');
-//           break;
-//         case 'Cloudy':
-//           resolve('☁️');
-//           break;
-//         case 'Raining':
-//           resolve('🌧️');
-//           break;
-//         default:
-//           reject('NO ICON FOUND');
-//       }
-//     }, 1000);
-//   });
-// }
-
-// const onSuccess = (data) => {
-//   console.log(`Success: ${data}`);
-// };
-
-// const onFail = (error) => {
-//   console.log(`Error: ${error}`);
-// };
-
-// getWeather().then(getWeahterIcon).then(onSuccess).catch(onFail);
-
-// function fun1() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve('Good data');
-//     }, 200);
-//   });
-// }
-
-// function fun2() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve('🥸');
-//     }, 500);
-//   });
-// }
-
-// function onSuccess(data) {
-//   console.log(`Success: ${data}`);
-// }
-
-// function onError(errorCode) {
-//   console.log(`Error: ${errorCode}`);
-// }
-
-// function inTheEnd() {
-//   console.log('We be done');
-// }
-
-// fun1().then(fun2).then(onSuccess).catch(onError).finally(inTheEnd);
-
-function fetchData() {
+function getTodos(resource) {
   return new Promise((resolve, reject) => {
-    fetch('https://api.weather.gov/gridpoints/OKX/35,35/forecast')
-      .then((response) => response.json())
-      .then((data) => resolve(data.properties.periods[1].shortForecast));
+    const request = new XMLHttpRequest();
+
+    request.addEventListener('readystatechange', () => {
+      // console.log(request, request.readyState);
+      if (request.readyState === 4 && request.status === 200) {
+        // console.log(request.responseText);
+        const data = JSON.parse(request.responseText);
+        console.log(data);
+        resolve(data);
+      } else if (request.readyState === 4) {
+        // console.log('Couth not fetch data');
+        reject('Could not fetch data');
+      }
+    });
+
+    request.open('GET', resource);
+    request.send();
   });
 }
 
-function displayData(weather) {
-  console.log(weather);
-}
-
-function onError(err) {
-  console.log(`Error: ${err}`);
-}
-
-fetchData().then(displayData).catch(onError);
+getTodos(links[0])
+  .then((data) => {
+    console.log(`Promise resolved: ${data}`);
+  })
+  .catch((err) => {
+    console.log(`Promise rejected: ${err}`);
+  });
