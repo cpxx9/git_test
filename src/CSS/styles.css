@@ -4,21 +4,18 @@ body {
   font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 1em;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
 }
 
 * {
   box-sizing: border-box;
-}
-
-input:valid {
-  border: 1px solid black;
-}
-
-input:invalid,
-input:focus:invalid {
-  border: 2px dashed red;
-}
-
-input:focus {
-  outline: none;
 }

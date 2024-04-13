@@ -1,37 +1,32 @@
 import '../CSS/styles.css';
 
-const links = [
-  'https://jsonplaceholder.typicode.com/posts/1/comments',
-  'https://jsonplaceholder.typicode.com/comments',
-  'https://jsonplaceholder.typicode.com/posts',
-];
+const img = document.querySelector('img');
+const changeGifBtn = document.querySelector('#changeGif');
+const searchBox = document.querySelector('#search');
 
-function getTodos(resource) {
-  return new Promise((resolve, reject) => {
-    const request = new XMLHttpRequest();
-
-    request.addEventListener('readystatechange', () => {
-      // console.log(request, request.readyState);
-      if (request.readyState === 4 && request.status === 200) {
-        // console.log(request.responseText);
-        const data = JSON.parse(request.responseText);
-        console.log(data);
-        resolve(data);
-      } else if (request.readyState === 4) {
-        // console.log('Couth not fetch data');
-        reject('Could not fetch data');
+function getGif(searchTerm) {
+  fetch(
+    `https://api.giphy.com/v1/gifs/translate?api_key=niJ4T4l1OG8uS68mGo6Qr5m5nkvVbOLc&s=${searchTerm}`,
+    {
+      mode: 'cors',
+    }
+  )
+    .then((response) => response.json())
+    .then((response) => {
+      console.log(response);
+      if (response.data.images) {
+        img.src = response.data.images.original.url;
+      } else {
+        console.log(new Error('No items found!'));
       }
+    })
+    .catch((err) => {
+      console.log(new Error(err));
     });
-
-    request.open('GET', resource);
-    request.send();
-  });
 }
 
-getTodos(links[0])
-  .then((data) => {
-    console.log(`Promise resolved: ${data}`);
-  })
-  .catch((err) => {
-    console.log(`Promise rejected: ${err}`);
-  });
+getGif('cats');
+
+changeGifBtn.addEventListener('click', () => {
+  getGif(searchBox.value);
+});
