@@ -4,25 +4,15 @@ const img = document.querySelector('img');
 const changeGifBtn = document.querySelector('#changeGif');
 const searchBox = document.querySelector('#search');
 
-function getGif(searchTerm) {
-  fetch(
+async function getGif(searchTerm) {
+  const response = await fetch(
     `https://api.giphy.com/v1/gifs/translate?api_key=niJ4T4l1OG8uS68mGo6Qr5m5nkvVbOLc&s=${searchTerm}`,
     {
       mode: 'cors',
     }
-  )
-    .then((response) => response.json())
-    .then((response) => {
-      console.log(response);
-      if (response.data.images) {
-        img.src = response.data.images.original.url;
-      } else {
-        console.log(new Error('No items found!'));
-      }
-    })
-    .catch((err) => {
-      console.log(new Error(err));
-    });
+  );
+  const apiSrc = await response.json();
+  img.src = apiSrc.data.images.original.url;
 }
 
 getGif('cats');
