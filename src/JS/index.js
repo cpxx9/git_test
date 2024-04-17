@@ -11,12 +11,16 @@ async function getGif(searchTerm) {
       mode: 'cors',
     }
   );
-  const apiSrc = await response.json();
-  img.src = apiSrc.data.images.original.url;
+  const catData = await response.json();
+  img.src = catData.data.images.original.url;
 }
 
-getGif('cats');
+getGif('cats').catch((err) => {
+  console.error(err);
+});
 
 changeGifBtn.addEventListener('click', () => {
-  getGif(searchBox.value);
+  getGif(searchBox.value).catch((err) => {
+    console.error(err);
+  });
 });
