@@ -5,7 +5,16 @@ async function showAvatar() {
   const githubResponse = await fetch(
     `https://api.github.com/users/${user.name}`
   );
-  const githubUser = githubResponse.json();
+  const catData = await response.json();
+  img.src = catData.data.images.original.url;
 }
 
-showAvatar();
+getGif('cats').catch((err) => {
+  console.error(err);
+});
+
+changeGifBtn.addEventListener('click', () => {
+  getGif(searchBox.value).catch((err) => {
+    console.error(err);
+  });
+});
