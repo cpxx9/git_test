@@ -1,20 +1,23 @@
 import '../CSS/styles.css';
 
-async function showAvatar() {
-  const user = { name: 'cpxx9' };
-  const githubResponse = await fetch(
-    `https://api.github.com/users/${user.name}`
-  );
-  const catData = await response.json();
-  img.src = catData.data.images.original.url;
+const handleError =
+  (fn) =>
+  (...params) =>
+    fn(...params).catch(console.error);
+
+function double(x) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(x * 2), 2000);
+  });
 }
 
-getGif('cats').catch((err) => {
-  console.error(err);
-});
+async function addTotals(x) {
+  const a = await double(10);
+  const b = await double(30);
+  const c = await double(20);
+  return x + a + b + c;
+}
 
-changeGifBtn.addEventListener('click', () => {
-  getGif(searchBox.value).catch((err) => {
-    console.error(err);
-  });
-});
+const safeAddTotals = handleError(addTotals);
+// safeAddTotals(new Error('test')).then((result) => console.log(result));
+addTotals(new Error('test')).then((result) => console.log(result));
