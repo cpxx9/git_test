@@ -1,4 +1,6 @@
-import '../CSS/styles.css';
+#!/usr/bin/env node
+
+// import '../CSS/styles.css';
 
 // const company = {
 //   // the same object, compressed for brevity
