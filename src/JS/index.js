@@ -118,12 +118,11 @@ import '../CSS/styles.css';
 
 // console.log(powerInt(2, 0));
 
-function replicate(count, x) {
-  if (count <= 0) {
-    return [];
-  }
-  return [x].concat(replicate(count - 1, x));
-}
+// function replicate(count, x) {
+//   if (count <= 0) {
+//     return [];
+//   }
+//   return [x].concat(replicate(count - 1, x));
+// }
 
-console.log(replicate(-1, 9));
-console.log([[[[[[[[[[[[[9]]]]]]]]]]]]]);
+// console.log(replicate(-1, 9));
