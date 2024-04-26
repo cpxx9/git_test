@@ -126,5 +126,14 @@
 //   }
 //   return [x].concat(replicate(count - 1, x));
 // }
-
 // console.log(replicate(-1, 9));
+
+/* 
+replicate(3, 9)       //  [9].concat(replicate (2,9))
+  replicate(2, 9)     //  [9].concat(replicate(1,9))
+    replicate(1,9)    //  [9].concat(replicate(0,9))
+      replicate(0,9)  //  []
+    [9].concat([])    //  [9]
+  [9].concat([9])     //  [9,9]
+[9].concat([9,9])     //  [9,9,9]
+*/
