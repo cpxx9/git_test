@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-// import '../CSS/styles.css';
+import '../CSS/styles.css';
