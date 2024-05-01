@@ -1,6 +1,3 @@
-#!/usr/bin/env node
-
-// import '../CSS/styles.css';
 class Node {
   constructor(data, next = null) {
     this.data = data;
@@ -8,5 +5,4 @@ class Node {
   }
 }
 
-const n1 = new Node(100);
-console.log(n1);
+export default Node;
