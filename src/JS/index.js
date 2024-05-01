@@ -1,12 +1,8 @@
 #!/usr/bin/env node
-
 // import '../CSS/styles.css';
-class Node {
-  constructor(data, next = null) {
-    this.data = data;
-    this.next = next;
-  }
-}
+import LinkedList from './LinkedList';
 
-const n1 = new Node(100);
-console.log(n1);
+const ll = new LinkedList();
+ll.insertFirst(100);
+
+console.log(ll);
