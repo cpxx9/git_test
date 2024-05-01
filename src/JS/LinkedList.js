@@ -59,6 +59,48 @@ class LinkedList {
     this.size += 1;
   }
 
+  getAt(index) {
+    let current = this.head;
+    let count = 0;
+
+    while (current) {
+      if (count === index) {
+        console.log(current.data);
+      }
+      count += 1;
+      current = current.next;
+    }
+
+    return null;
+  }
+
+  removeAt(index) {
+    if (index < 0 || index > this.size) {
+      return;
+    }
+    let curr = this.head;
+    let prev;
+    let count = 0;
+
+    if (index === 0) {
+      this.head = curr.next;
+    } else {
+      while (count < index) {
+        count += 1;
+        prev = curr;
+        curr = curr.next;
+      }
+      prev.next = curr.next;
+    }
+
+    this.size -= 1;
+  }
+
+  clearList() {
+    this.head = null;
+    this.size = 0;
+  }
+
   printListData() {
     let current = this.head;
     while (current) {

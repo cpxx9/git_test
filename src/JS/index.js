@@ -7,6 +7,7 @@ ll.insertFirst(100);
 ll.insertFirst(200);
 ll.insertFirst(300);
 ll.insertLast(400);
-ll.insertAt(250, 0);
 
-ll.printListData();
+ll.clearList();
+console.log(ll);
+// ll.getAt(2);
