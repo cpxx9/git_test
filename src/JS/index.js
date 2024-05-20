@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // import '../CSS/styles.css';
-function orderTotal(order) {
+function orderTotal(fetch, order) {
+  fetch();
   return Promise.resolve(
     order.items.reduce(
       (prev, curr) => curr.price * (curr.quantity || 1) + prev,
