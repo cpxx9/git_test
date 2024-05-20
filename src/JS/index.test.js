@@ -1,5 +1,18 @@
 import orderTotal from '.';
 
+test('calls api if index specified', () => {
+  let isFakeFetchCalled = false;
+  const fakeFetch = (url) => {
+    isFakeFetchCalled = true;
+  };
+  orderTotal(fakeFetch, {
+    indexCode: 0,
+    items: [{ name: 'Dragon waffles', price: 20, quantity: 2 }],
+  }).then((result) => {
+    expect(isFakeFetchCalled).toBe(true);
+  });
+});
+
 test('Quantity', () =>
   orderTotal({
     items: [{ name: 'Dragon candy', price: 2, quantity: 3 }],
