@@ -16,7 +16,7 @@ test('Happy path (Example 1)', () =>
       { name: 'Dragon food', price: 8, quantity: 1 },
       { name: 'Dragon cage (small)', price: 800, quantity: 1 },
     ],
-  }).then((tresult) => expect(result).toBe(808)));
+  }).then((result) => expect(result).toBe(808)));
 
 test('Happy path (Example 2)', () =>
   orderTotal({
