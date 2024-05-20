@@ -4,7 +4,7 @@
   "description": "My first Github repo\r Hello Odin!",
   "private": true,
   "scripts": {
-    "test": "jest --watch ./src/JS/*.js",
+    "test": "jest --verbose --watch ./src/JS/*.js",
     "build": "webpack --config webpack.prod.js",
     "webdev": "webpack serve --config webpack.dev.js",
     "nodedev": "nodemon --exec babel-node src/JS/index.js",

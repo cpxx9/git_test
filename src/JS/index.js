@@ -7,4 +7,8 @@ function orderTotal(order) {
   );
 }
 
+const result = fetch('https://jsonplaceholder.typicode.com/users/1/todos')
+  .then((response) => response.json())
+  .then((data) => console.log(data[0].title.length));
+
 export default orderTotal;
