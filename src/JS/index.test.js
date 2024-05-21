@@ -5,15 +5,21 @@ const empty = () => {};
 test('calls api if index specified', () => {
   let isFakeFetchCalled = false;
   const fakeFetch = (url) => {
+    expect(url).toBe('https://jsonplaceholder.typicode.com/users/1/todos');
     isFakeFetchCalled = true;
+    return Promise.resolve({
+      json: () => Promise.resolve({}),
+    });
   };
   orderTotal(fakeFetch, {
-    indexCode: 0,
+    indexCode: 1,
     items: [{ name: 'Dragon waffles', price: 20, quantity: 2 }],
   }).then((result) => {
     expect(isFakeFetchCalled).toBe(true);
   });
 });
+
+test.skip('if coutnry code specified', () => {});
 
 test('Quantity', () =>
   orderTotal(empty, {

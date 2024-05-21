@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // import '../CSS/styles.css';
 function orderTotal(fetch, order) {
-  fetch();
+  fetch(`https://jsonplaceholder.typicode.com/users/${order.indexCode}/todos`);
   return Promise.resolve(
     order.items.reduce(
       (prev, curr) => curr.price * (curr.quantity || 1) + prev,
