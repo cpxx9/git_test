@@ -5,6 +5,7 @@ function fetchData() {
     setTimeout(() => resolve('peanut butter'), 1000);
   });
 }
+const func = data => console.log(data);
 
 console.log('test');
 export default fetchData;
