@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 // import '../CSS/styles.css';
-function fetchData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve('peanut butter'), 1000);
-  });
-}
+import { axios } from 'axios';
+
+function fetchData() {}
 
 export default fetchData;

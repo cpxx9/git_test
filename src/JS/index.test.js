@@ -1,14 +1,15 @@
 import fetchData from '.';
 
-test('fetched peanut butter', (done) => {
-  function callback(data) {
-    try {
-      expect(data).toBe('peanut butter');
-      done();
-    } catch (error) {
-      done(error);
-    }
-  }
+test('spy on method', () => {
+  const video = {
+    play() {
+      return true;
+    },
+  };
 
-  fetchData(callback);
+  const spy = jest.spyOn(video, 'play');
+  video.play();
+
+  expect(spy).toHaveBeenCalled();
+  spy.mockRestore();
 });
