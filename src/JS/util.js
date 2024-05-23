@@ -1,8 +1,16 @@
-const axios = require('axios');
+import fetchData from './http';
 
-const fetchData = () =>
-  axios
-    .get('https://jsonplaceholder.typicode.com/todos/1')
-    .then((response) => response.data);
+const loadTitle = () =>
+  fetchData().then((extractedData) => {
+    const { title } = extractedData;
+    const transformedTitle = title.toUpperCase();
+    return transformedTitle;
+  });
 
-export default fetchData;
+const printTitle = () => {
+  loadTitle().then((title) => {
+    console.log(title);
+  });
+};
+
+export { loadTitle, printTitle };
