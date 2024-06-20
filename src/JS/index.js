@@ -1,10 +1,5 @@
-#!/usr/bin/env node
-import '../CSS/styles.css';
+const btn = document.querySelector('#postTitle');
 
-import { printTitle } from './util';
-
-const button = document.querySelector('button');
-
-button.addEventListener('click', printTitle);
-
-export default printTitle;
+btn.addEventListener('click', () => {
+  console.log('test');
+});

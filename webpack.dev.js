@@ -1,13 +1,12 @@
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const { merge } = require('webpack-merge');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  mode: "development",
-  devtool: "inline-source-map",
+  mode: 'development',
+  devtool: 'inline-source-map',
   devServer: {
-    static: "./src",
+    static: './src',
     port: 3001,
     open: true,
     hot: true,
@@ -19,6 +18,6 @@ module.exports = merge(common, {
     // new BundleAnalyzerPlugin(),
   ],
   optimization: {
-    runtimeChunk: "single",
+    runtimeChunk: 'single',
   },
 });
