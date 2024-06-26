@@ -1,56 +1,40 @@
 body {
-  font-family: sans-serif;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  min-height: 100dvh;
-  min-width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  background: #eee;
 }
 
-nav {
-  display: flex;
-  gap: 0.5rem;
-}
-
-a {
-  flex: 1;
-  background-color: #333;
-  color: #fff;
-  border: 1px solid;
-  padding: 0.5rem;
+header {
+  height: 60px;
+  line-height: 60px;
+  background: pink;
   text-align: center;
-  text-decoration: none;
-  transition: all 0.5s ease-out;
 }
 
-a:hover,
-a:focus {
-  background-color: #fff;
-  color: #333;
+main {
+  padding: 32px;
 }
 
-div {
-  font-size: 1.6rem;
-  padding: 20px;
-  border: 3px solid red;
-  border-radius: 20px;
-  width: 480px;
-
-  display: none;
-  opacity: 0;
-  transition: opacity 1s, display 1s allow-discrete;
+.tooltip {
+  top: -12px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 90px;
+  text-align: center;
+  padding: 8px;
+  background: white;
+  box-shadow: 1px 2px 8px hsla(0deg, 0%, 0%, 0.25);
+  border-radius: 6px;
 }
 
-.showing {
-  opacity: 1;
-  display: block;
+header {
+  position: relative;
+  z-index: 2;
 }
-
-@starting-style {
-  .showing {
-    opacity: 0;
-  }
+.tooltip {
+  position: absolute;
+  z-index: 999999;
+}
+main {
+  position: relative;
+  z-index: 1;
 }
