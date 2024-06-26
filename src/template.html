@@ -24,3 +24,22 @@
 </body>
 
 </html>
+
+<style>
+  /* Stacking context items */
+
+  header {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tooltip {
+    position: absolute;
+    z-index: 999999;
+  }
+
+  main {
+    position: relative;
+    will-change: transform;
+  }
+</style>
