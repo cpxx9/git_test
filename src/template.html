@@ -12,34 +12,23 @@
 </head>
 
 <body>
-  <header>
-    My Cool Site
-  </header>
-  <main>
-    <div class="tooltip">
-      A tooltip
-    </div>
-    <p>Some main content</p>
-  </main>
+  <button class="btn"><span class="background">Hello World</span></button>
 </body>
 
 </html>
 
 <style>
-  /* Stacking context items */
-
-  header {
-    position: relative;
-    z-index: 2;
-  }
-
-  .tooltip {
-    position: absolute;
-    z-index: 999999;
-  }
-
-  main {
-    position: relative;
+  .background {
     will-change: transform;
+    transition: transform 450ms;
+  }
+
+  .btn:hover .background {
+    transition: transform 150ms;
+    transform: translateY(-10px);
+  }
+
+  .btn {
+    outline: auto;
   }
 </style>
